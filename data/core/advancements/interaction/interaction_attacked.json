@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "intraction_attacked": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"Rb.Interaction\"]}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "core:interaction/leftclick"
+    }
+  }
+  
